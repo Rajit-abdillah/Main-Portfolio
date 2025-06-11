@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajit Abdillah | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="/src/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <!-- this is navbar -->
+  <body class="bg-gray-100">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a
+              href="index.html"
+              class="text-xl font-bold text-gray-800 hover:text-blue-500"
+              >Rajit Abdillah</a
+            >
+          </div>
+          <div class="hidden md:flex space-x-4 items-center">
+            <a href="#home" class="text-gray-700 hover:text-blue-500">Home</a>
+            <a href="#about" class="text-gray-700 hover:text-blue-500">About</a>
+            <a href="#" class="text-gray-700 hover:text-blue-500">Projects</a>
+            <a href="#" class="text-gray-700 hover:text-blue-500">Contact</a>
+          </div>
+          <div class="flex items-center md:hidden">
+            <button id="menu-button" class="text-gray-700 focus:outline-none">
+              <!-- hamburger icon -->
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+        <a href="#" class="block py-2 text-gray-700 hover:text-blue-500"
+          >Home</a
+        >
+        <a href="#" class="block py-2 text-gray-700 hover:text-blue-500"
+          >About</a
+        >
+        <a href="#" class="block py-2 text-gray-700 hover:text-blue-500"
+          >Services</a
+        >
+        <a href="#" class="block py-2 text-gray-700 hover:text-blue-500"
+          >Contact</a
+        >
+      </div>
+    </nav>
+    <!-- hero section -->
+    <section id="home">
+      <div
+        class="bg-violet-600 flex items-center justify-center text-white text-center"
+        style="min-height: calc(117vh - 4rem)"
+      >
+        <div
+          class="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 dark:text-gray-50"
+        >
+          <h1
+            class="text-5xl font-bold leading-none sm:text-6xl xl:max-w-3xl dark:text-gray-50"
+          >
+            Rajit Abdillah | frontend developer
+          </h1>
+          <p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl dark:text-gray-50">
+            A beginner frontend developer focusing on simple and responsive
+            design.
+          </p>
+          <div class="flex flex-wrap justify-center">
+            <a
+              type="button"
+              class="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-gray-100 dark:text-gray-900 hover:bg-gray-200"
+            >
+              See my projects
+            </a>
+            <a
+              type="button"
+              class="px-8 py-3 m-2 text-lg border rounded dark:border-gray-300 dark:text-gray-50"
+              href="#about"
+            >
+              About me
+            </a>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://source.unsplash.com/random/480x320"
+        alt=""
+        class="w-5/6 mx-auto mb-12 -mt-20 dark:bg-gray-500 rounded-lg shadow-md lg:-mt-40"
+      />
+    </section>
+
+    <!--About Me-->
+    <section class="w-full px-6 py-16 bg-white" id="about">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row md:space-x-12">
+        <div class="md:w-1/2 space-y-4">
+          <h2 class="text-2xl font-bold">About Me</h2>
+          <p>
+            Hi, i am a beginner in frontend development, focused on making
+            simple and interactive website with HTML, CSS and JavaScript.
+          </p>
+          <p>
+            I enjoy problem solving, although i'm not the best at it, i will always try to thrive to be better, i'm also trying my best with CSS design, i'm still not that good but i will always try to practice and learn more about the tricks and tips to make a good design that will attract users.
+          </p>
+          <p>
+            I am also a fast learner in many things in life, but in programming, it's not as easy as i expected, programming have been pushing and punching me back a lot, it doesn't let me win easily, but i know that won't stop me to be a better developer.
+          </p>
+          <p>
+            i'm open to job opportunities, if you have any job opportunities that you think i would be a good fit for, feel free to contact me!
+          </p>
+          <a
+            href="#contact"
+            class="inline-block bg-violet-600 text-white px-5 py-2 rounded mt-4 hover:bg-violet-700"
+          >
+            Contact
+          </a>
+        </div>
+
+        <!--Skills-->
+        <div class="md:w-1/2 mt-10 md:mt-0">
+          <h2 class="text-2xl font-bold mb-4">My Skills</h2>
+          <div class="flex flex-wrap gap-3">
+            <span class="bg-gray-200 px-4 py-2 rounded">HTML</span>
+            <span class="bg-gray-200 px-4 py-2 rounded">CSS</span>
+            <span class="bg-gray-200 px-4 py-2 rounded">JavaScript</span>
+            <span class="bg-gray-200 px-4 py-2 rounded">Tailwind</span>
+            <span class="bg-gray-200 px-4 py-2 rounded">BootStrap</span>
+            <span class="bg-gray-200 px-4 py-2 rounded">Git</span>
+            <span class="bg-gray-200 px-4 py-2 rounded">GitHub</span>
+            <span class="bg-gray-200 px-4 py-2 rounded">Responsive Design</span>
+            <span class="bg-gray-200 px-4 py-2 rounded">Terminal</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
